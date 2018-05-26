@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title></title>
+    <link rel="stylesheet" href="css/Style.css">
+</head>
+
+<body onload="init()">
+    <header>
+        <button class="fa hamburger menu-btn clear-btn" onclick="toggleMenu(this)"></button>
+        <nav class="main-menu close">
+            <ul class="clean-list flex space-between align-center">
+                <!-- <button class="fa hamburger menu-btn clear-btn" onclick="toggleMenu(this)"></button> -->
+                <li>
+                    <a href="#" data-trans="Portfolio">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#about" data-trans="About">About</a>
+                </li>
+                <li>
+                    <ul class="logo">
+                        <li>
+                            <img class="back-img" src="img/pointy-thingy.png" />
+                        </li>
+                        <li>
+                            <img class="front-img" src="img/logo.png" />
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Blog</a>
+                </li>
+                <li>
+                    <a href="#contact-form">Get in touch</a>
+                </li>
+                <!-- <button class="fa hamburger menu-btn clear-btn" onclick="toggleMenu(this)"></button> -->
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="img-container">
+            <section class="container img-wrapper open">
+                <div class="flex flex-column justify-start">
+                    <div class="flex space-between flex-wrap">
+                        <div class="add-img">
+                            <input class="input-base" type="url" placeholder="Add image from url...
+                            
+                            " id="imgFiles" />
+                            <button class="fa img-grid-btn pointer" onclick="addImg()"></button>
+                        </div>
+                        <div class="search">
+                            <input class="input-base" type="text" placeholder="Search.." name="search2">
+                            <button class="fa pointer img-grid-btn" type="submit" onclick="searchImgInput()"></button>
+                        </div>
+                    </div>
+                    <div class="flex space-between align-start">
+                        <div class="img-grid">
+                            <!-- render images grid -->
+                        </div>
+                        <div class="filters-container">
+                            <div class="filter-cloud flex flex-wrap">
+                                <!-- render cloud words -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="meme-container container flex flex-column space-between close">
+                <div class="meme-img">
+                    <canvas id="meme-canvas">
+                    </canvas>
+                </div>
+                <div class="meme-controls flex flex-column justify-start">
+                    <ul class="ctrl-btns clean-list flex space-between align-center">
+                        <li>
+                            <ul class="ctrl-btns clean-list flex flex-start align-center">
+                               <li>
+                                   <a href="#" id="btn-save" class="fa base-btn pointer" download="myMeme.png" onclick="downloadCanvas(this)"></a>
+                               </li> 
+                               <li>
+                                   <button class="fa clear-btn base-btn pointer" onClick="addNewLine()"></button>
+                               </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <button class="fa clear-btn base-btn pointer close-window" onclick="closeMeme()"></button>
+                        </li>
+                    </ul>
+                    <div class="edit-txt-container">
+                        <!-- meme input fields come here -->
+                    </div>
+
+                </div>
+            </section>
+        </div>
+        <section>
+            <div class="about">
+                <div class="about-container container">
+                    <!-- render team members -->
+                </div>
+            </div>
+        </section>
+        <section>
+            <form class="contact-form">
+                <div class="container">
+                    <h1>Get in touch</h1>
+                    <h2>In order to get in touch use the contact form below:</h2>
+                    <div class="info-grid">
+                        <input class="name input-base" type="text" placeholder="Name (Required)" required></input>
+                        <input class="email input-base" type="email" placeholder="Email (Required)" required></input>
+                        <input class="subject input-base" type="text" placeholder="Subject"></input>
+                        <textarea class="form-msg input-base" type="text" placeholder="Write your message here..."></textarea>
+                        <p class="company-info">
+                            <span>Quisque Hendrerit:</span> purus dapi-bus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam
+                            tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus morbi vitae.
+                        </p>
+                        <div class="company-contact">
+                            <p class="fa company-address">
+                                <span></span> Elm St. 14/05 Lost City</p>
+                            <p class="fa company-phone">
+                                <span></span> + 3528 331 86 35</p>
+                            <p class="fa company-email">
+                                <span></span> info@hexalcorp.com</p>
+                        </div>
+                        <button class="form-send">Send</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+    </main>
+    <div style="font-family :impactRegular;"></div>
+    <footer>
+        <small>
+            © Copyright 2013 by PSDchat
+        </small>
+    </footer>
+    <script src="js/meme.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

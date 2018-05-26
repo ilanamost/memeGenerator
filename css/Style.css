@@ -1,0 +1,4 @@
+@import 'global.css';
+@import 'narrow.css' (min-width: 740px); 
+@import 'normal.css' (min-width: 1060px); 
+

@@ -1,0 +1,788 @@
+/*-------Fonts---------*/
+
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('../fonts/font-awesome/fontawesome-webfont.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.fa {
+    font-family: 'FontAwesome';
+}
+
+/*---Lato-Bold----- */
+@font-face {
+    font-family: latoBold; 
+    src: url('../fonts/Lato/Lato-Bold.ttf');
+}
+
+/*---Lato-Regular----- */
+@font-face {
+    font-family: latoRegular; 
+    src: url('../fonts/Lato/Lato-Regular.ttf');
+
+}
+/*---Maven-Pro-Regular----- */
+@font-face {
+    font-family: MavenProRegular; 
+    src: url('../fonts/MavenPro/MavenProRegular.ttf');
+}
+
+/*---Lato-Black----- */
+@font-face {
+    font-family: latoBlack; 
+    src: url('../fonts/lato-black/Lato-Black.ttf');
+}
+
+/*---Maven-pro-Regular----- */
+@font-face {
+    font-family: mavenProRegular; 
+    src: url('../fonts/maven-pro/MavenPro-Regular.ttf');
+}
+
+/*---Impact----- */
+@font-face {
+    font-family: impactRegular;
+    src: url('../fonts/impact/impact.ttf');
+}
+
+
+
+
+/*-------Global---------*/
+* {
+    box-sizing: border-box;
+    /* outline: 1px solid hotpink; FOR DEV */
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+html {
+    font-family: 'latoBold', sans-serif;
+    font-size: 16px;
+    text-transform:initial;
+}
+
+.container {
+    max-width: 1050px;
+    margin: 0 auto;
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+body {
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: normal;
+    margin: 0 0 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#div1{
+    background-color: aqua;
+}
+
+h1 {
+    margin: 0;
+}
+
+.social a{
+    color: black;
+}
+   
+.social a:visited {
+    color: initial;
+}
+
+.social a:hover{
+    color: #ffffff;
+}
+
+/*----Helpers----*/
+
+.clean-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.clear-btn {
+    border: none;
+    background: transparent;
+    padding: 0;
+}
+
+
+.pointer:hover{
+    cursor: pointer;
+}
+
+/*---flex---*/
+
+.flex {
+    display: flex;
+}
+.inline-flex {
+    display: inline-flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-start {
+    justify-content: flex-start;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+
+.align-center {
+    align-items: center;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+.space-between {
+    justify-content: space-between;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-full {
+    flex: 1;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.align-start {
+    align-items: flex-start;
+}
+
+.align-end {
+    align-items: flex-end;
+}
+
+
+/****** header - footer **********/
+
+header {
+    border-top: 6px solid transparent;
+    height: 125px;
+    text-transform: uppercase;
+    position: relative;
+    color: #fff;
+    border-top: 0;
+}
+
+.menu-btn{
+    color: white;
+    padding: 10px;
+}
+
+footer {
+    background-color: #222222;
+    height: 40px;
+}
+
+.main-menu > ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.main-menu>ul>li {
+    display: none;
+}
+
+.main-menu>ul>li{
+    padding: 40px 0;
+}
+
+.main-menu {
+    background-color: #323232;
+    z-index: 1;
+    flex-direction: row; 
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    padding: 20px;
+}
+
+.main-menu.open {
+    flex-direction: column; 
+}
+
+.main-menu ul.open> li{
+  display: block;
+}
+
+.hamburger {
+    display: block;
+    color: black;
+    transition: transform .5s;
+}
+
+.main-menu li a{
+    color: #ffffff;
+}
+.main-menu li a:hover {
+    color: #2eb398;
+}
+
+.main-menu li:not(:last-child) {
+    margin-right: 20px;
+}
+
+.ctrl-btns li:not(:last-child){
+    margin-right: 20px;
+}
+
+.logo {
+    width: 90px;
+    position: relative;
+}
+
+.logo .back-img{
+    width: 100%;
+    position: absolute;
+    top: -36px;
+    left: 0;
+}
+
+.logo .front-img{
+    position: absolute;
+    width: 65px;
+    height: 55px;
+    top: -14px;
+    left: 10px;
+}
+
+.main-menu {
+    padding: 30px 10px;
+    font-size: 0.75em;
+}
+
+
+#btn-save{
+    color: black;
+}
+
+#btn-save:hover{
+    color: white;
+}
+
+/***** main ********/
+.style-form{
+    width: 100%;
+}
+
+
+.base-btn.close-window{
+    background-color: lightgrey;
+}
+
+.contact-input > input{
+    background-color: #454545;
+    border: none;
+}
+
+.contact-input > input:not(:first-child){
+    margin-top: 15px;
+}
+
+.contact-input > input:first-child{
+    margin-top: 5px;
+}
+
+
+aside> p > span{
+    margin-right: 5px;
+    color: #bebebe;
+    line-height: 21.56px;
+}
+
+::-webkit-input-placeholder {
+    color: #bebebe;
+    font-family: 'latoBold', sans-serif;
+    padding-left: 15px;
+    /* position: absolute; */
+}
+
+.form-msg {
+    position: relative;
+}
+
+::-ms-input-placeholder {
+    color: #bebebe;
+    font-family: 'latoBold', sans-serif;
+    padding-left: 15px;
+}
+
+
+.form-send{
+    background-color: #2eb398;
+    color: #d7fcf5;
+    border: none;
+    font-family: 'latoBold', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 21.56px;
+    text-transform: uppercase;
+}
+
+.company-info{
+    color: #bebebe;
+    font-family: 'latoRegular', sans-serif;
+    line-height: 21.56px;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.contact-form > div > h1{
+    color: #e0e0e0;
+    font-family: 'mavenProRegular', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 4.56px;
+}
+
+.contact-form > div > h2{
+    font-family: 'mavenProRegular', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.56px;
+    color: #bebebe;
+    margin-top: 15px;
+}
+
+.base-btn{
+    border-radius: 50%;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 15px;
+    outline-style: none;
+    background-color: #2eb398;
+}
+
+.base-btn:hover {
+    color: #fff;
+}
+
+.base-btn-small {
+    margin-right: 3px;
+    margin-bottom: 3px;
+    font-size: 14px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.txt-ctrl {
+    margin-top: 20px;
+}
+
+.txt-ctrl input[type="color"] {
+    padding: 1px 2px;
+    width: 33px;
+    height: 33px;
+}
+
+.img-grid {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-gap: 20px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.img-grid>img{
+    grid-column: span 6;
+    grid-row: span 6;
+    margin: 0 auto;
+    height: 150px;
+    width: 100%;
+}
+
+.filters-container {
+    width: 33.333%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    display: none;
+    padding-left: 20px;
+    color: #2eb398;
+}
+
+.filter-cloud {
+    font-size: 15px;
+    text-transform: capitalize;
+}
+.filter-cloud>span:not(:first-child){
+    margin-left: 10px;
+}
+
+.social {
+    margin-left:calc(100% - 230px);
+}
+
+.social li {
+    width: 20px;
+    height: 20px;
+}
+
+.contact-input {
+    width: 75%;
+    margin-right: 15px;
+}
+
+.contact-input  input {
+    width: 100%;    
+}
+
+.contact-input button {
+    width: 90px;
+    height: 37px;
+}
+
+.input-base {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid transparent;
+    background: #454545;
+    font-family: 'LatoRegular', sans-serif;
+    color: #ffffff;
+}
+
+.contact-form .input-base {
+    font-size: 12px;
+}
+
+.meme-line-txt {
+    width: 100%;
+}
+
+.meme-img {
+    width: 100%;
+}
+.img-grid-btn {
+    padding: 10px;
+    color: #2eb398;;
+    font-size: 17px;
+    border: 1px solid transparent;
+    background-color: transparent;
+    border-left: none;
+    width: 40px;
+}
+
+.add-img {
+    margin-bottom: 10px;
+}
+
+.search{
+    margin-bottom: 10px;
+}
+
+.meme-container {
+    margin: 0 auto;
+}
+
+.meme-controls{
+    width: 80%; 
+    margin-left: 40px;
+
+}
+
+.meme-lines {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50vh;
+    width: 50vw;
+}
+
+.close {
+    display: none;
+    z-index: -1;
+}
+.meme-txt-wrapper {
+    margin-top: 20px;
+}
+
+.about-img{
+    width: 50%;
+    margin-left: 20px;
+}
+
+.about-info{
+    width: 50%;
+    height: 297px;
+    position: relative;
+    margin-left: 10px;
+}
+
+.info{
+    position: absolute;
+    top: 0;
+}
+
+.about-info h1 {
+    color: #d7fcf5;
+    font-family: 'MavenProRegular', sans-serif;
+    font-size:30px;
+    text-transform: capitalize;
+}
+
+.about-info h2 {
+    color: #20816d;
+    font-family: 'MavenProRegular', sans-serif;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+.about-info p {
+    color: #d7fcf5;
+    font-family: 'LatoRegular', sans-serif;
+    font-size: 12px;
+    margin-bottom: 40px;
+    overflow: hidden;
+    max-height: 190px;
+}
+
+.about-container button {
+    font-size: 40px;
+}
+
+.about-container button:hover {
+    color: #ffffff;
+}
+
+
+.facebook {
+    background-color: #3660a0;
+}
+.twitter {
+    background-color: #2daae1;
+}
+.google-plus {
+    background-color: #db5643;
+}
+.pinterest {
+    background-color: #cb2127;
+}
+.linkedin {
+    background-color: #3278a3;
+}
+.dribbble {
+    background-color: #f06d9c;
+}
+
+.about {
+    background-color: #2eb398;
+}
+
+.about-container{
+    padding-top: 65px;
+    padding-bottom: 65px;
+}
+.img-container {
+    background-color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.contact-form{
+    background-color: #323232;
+    padding-bottom: 65px;
+    padding-top: 65px;
+}
+
+small {
+    color:#454545;
+}
+
+.info-grid{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(8,38px);
+    grid-gap: 20px;
+    width: 100%;
+    margin-top: 20px;
+}
+.info-grid input{
+    grid-column: 1 / 9;
+    grid-row: span 1;
+    padding: 0;
+}
+
+
+.info-grid textarea.form-msg{
+    grid-column: 1 / 9;
+    grid-row: span 4;
+    padding-left: 0; 
+    resize: none;
+}
+
+.info-grid button{
+    grid-column: 7 / 9;
+    grid-row: span 1;
+}
+.info-grid .company-info {
+    grid-column: 9 / 12;
+    grid-row: 1 / 4;
+    margin-top: 0;
+    overflow: hidden;
+}
+
+.info-grid .company-contact {
+    grid-column: 9 / 12;
+    grid-row: 4 / span 8;
+}
+
+.company-contact p {
+    font-family: "latoBold", sans-serif;
+    color: #bebebe;
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 12px;
+
+}
+
+.company-info span {
+    font-weight: bold;
+}
+
+.company-contact p span {
+    font-family: 'FontAwesome';
+    color: #2eb398;
+    display: inline-block;
+    width: 25px;
+}
+
+select {
+    font-family: "latoBold", sans-serif;
+}
+
+
+/****** shape *****/
+/* .shape {
+    transform: rotate(120deg);
+    height: 440px;
+    overflow: hidden;
+    visibility: hidden;
+    width: 220px;
+  }
+  
+.shape1 {
+    transform: rotate(-60deg);
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+}
+
+.shape2 {
+    transform: rotate(-60deg);
+    height: 100%;
+    position: relative;
+    visibility: visible;
+    width: 100%;
+}
+
+.center {
+    float: left;
+    margin: 20px 10px;
+    width: 220px;
+  }
+  
+  .shape_row_even {
+    display: inline-block;
+    margin: 0 auto -275px auto;
+    overflow: hidden;
+  } */
+
+/***** check-box *******/
+
+.cb-container {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    padding-top: 3px;
+    /* margin-bottom: 12px; */
+    cursor: pointer;
+    font-size: 15px;
+    font-family: "latoRegular", sans-serif;
+    user-select: none;
+}
+
+.font-select {
+    margin-left: 10px;
+    padding-top: 5px;
+}
+
+.txt-ctrl .cb-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #323232;
+    border-radius: 5px;
+}
+
+/* On mouse-over, add a grey background color */
+.txt-ctrl .cb-container:hover input ~ .checkmark {
+    background-color: #2eb398;
+}
+
+/* When the checkbox is checked, add a blue background */
+.txt-ctrl .cb-container input:checked ~ .checkmark {
+    background-color: #2eb398;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.txt-ctrl .cb-container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.txt-ctrl .cb-container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
